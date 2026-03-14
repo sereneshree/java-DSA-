@@ -7,3 +7,13 @@ class Main {
         }
     }
 }
+
+// to print no. from 10 to 1.
+class Main {
+    public static void main(String[] args) {
+       
+        for (int i=10;i>=1;i--){
+            System.out.println(i);
+        }
+    }
+}
