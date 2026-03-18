@@ -246,7 +246,7 @@ class Main {
     }
 }    
 
-// to print
+// 11.  to print
 
 1
 01
@@ -276,6 +276,143 @@ class Main {
     }
 }
 
+// 12. to print
+
+1      1
+12    21
+123  321
+12344321
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("print a no.");
+        int n=sc.nextInt();
+        
+        int space=2*(n-1);
+        for (int i=1;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print(j);
+            }
+            for(int j=1;j<=space;j++){
+                System.out.print(" ");
+            }
+            for (int j=i;j>=1;j--){
+                System.out.print(j);
+            }
+        System.out.println();
+        space-=2;
+        }
+    }
+}
+
+// 13. to print
+
+1 
+2 3 
+4 5 6 
+7 8 9 10 
+11 12 13 14 15 
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("print a no.");
+        int n=sc.nextInt();
+        
+        int space=1;
+        for (int i=1;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print(space + " ");
+                space=space+1;
+            }
+        System.out.println();
+        
+        }
+    }
+}
+
+// 14. to print
+
+A 
+A B 
+A B C 
+A B C D 
+A B C D E 
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("print a no.");
+        int n=sc.nextInt();
+        
+        
+        for (int i=1;i<=n;i++){
+            for(char j='A';j<'A'+i;j++){
+                System.out.print(j+" ");
+    
+            }
+        System.out.println();
+        
+        }
+    }
+}
+
+// 15. to print
+
+A B C D 
+A B C 
+A B 
+A 
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("print a no.");
+        int n=sc.nextInt();
+        
+        
+        for (int i=1;i<=n;i++){
+            for(char j='A';j<'A'+(n-i);j++){
+                System.out.print(j+" ");
+    
+            }
+        System.out.println();
+        
+        }
+    }
+}
+
+//16. to print
+
+A 
+B B 
+C C C 
+D D D D 
+E E E E E 
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("print a no.");
+        int n=sc.nextInt();
+        
+        
+        for (char i='A';i<'A'+n;i++){
+            for(int j=1;j<=(i-'A'+1);j++){
+                System.out.print(i+" ");
+    
+            }
+        System.out.println();
+        
+        }
+    }
+}
 
 
    
